@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+
+    <picture><!--Utilizamos picture para carregar uma imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png"><!--utilizamos o source media para definir a imagem em diferentes tamanhos de tela, EX:computador, tablet, celular-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem flexével">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1> <!-- Digitar Áudio, controls autoplay para inserir áudio no HTML-->
+    <p>Vamos reproduzir áudio em HTML5</p>
+    <audio src="musica/jwful-josh.pan.mp3"controls autoplay ></audio>
+    <audio src="musica/lifeafterdeath-djfreedem.mp3"controls autoplay></audio>
+
+    <h1>Reproduzindo videos</h1>
+    <p>Vamos reproduzir videos</p>
+    <video src="videos/WhatsApp Video 2021-03-24 at 14.50.50.mp4" width="200" controls autoplay></video>
+    <video src="videos/WhatsApp Video 2021-03-26 at 16.17.49.mp4"width="300" controls autoplay></video>
+    <h1>Inserindo Video do youtube</h1> <!--Clica em compartilhar no video do youtube e em incirporar, copia o codigo e cola aquqi.-->
+    
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    
+</body>
+</html>
